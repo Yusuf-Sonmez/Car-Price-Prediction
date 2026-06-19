@@ -1,4 +1,3 @@
-# Car-Price-Prediction
 # 🚗 İkinci El Araç Fiyat Tahmin Motoru & Streamlit Arayüzü
 
 Bu proje, Türkiye ikinci el araç pazarından alınan yaklaşık 48.000 ilan verisi kullanılarak, yapay zeka tabanlı bir **End-to-End (Uçtan Uca) Fiyat Tahmin Modeli** ve bu modelin canlıda test edilebilmesini sağlayan **Streamlit Web Arayüzü** projesidir.
@@ -27,4 +26,12 @@ Bu proje, Türkiye ikinci el araç pazarından alınan yaklaşık 48.000 ilan ve
 ```text
 Araba_Fiyat_Tahmini/
 │
-├── models
+├── models/
+│   └── random_forest_model.pkl      # Diske kaydedilmiş şampiyon yapay zeka modeli
+│
+├── src/ (veya ana dizin)
+│   └── app.py                       # Streamlit Web Arayüzü kaynak kodu
+│
+├── main.ipynb                       # Veri analizi, ön işleme ve model eğitim notebook'u
+├── car_price_prediction.csv        # Ham veri seti (Gitignore ile korunmaktadır)
+└── README.md                        # Proje dokümantasyonu
